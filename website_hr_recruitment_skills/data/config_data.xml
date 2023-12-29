@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_recruitment.model_hr_applicant" model="ir.model">
+            <field name="website_form_key">apply_job</field>
+            <field name="website_form_default_field_id" ref="hr_recruitment.field_hr_applicant__description" />
+            <field name="website_form_access">True</field>
+            <field name="website_form_label">Apply for a Job</field>
+        </record>
+        <function model="ir.model.fields" name="formbuilder_whitelist">
+            <value>hr.applicant</value>
+            <value eval="[
+                'state_id',
+                'skill_ids',
+                'system_skill',
+            ]"/>
+        </function>
+    </data>
+</odoo>

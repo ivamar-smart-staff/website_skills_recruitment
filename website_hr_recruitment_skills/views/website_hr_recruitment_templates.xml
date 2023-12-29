@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Apply Inherit -->
+<template id="apply_inherit" inherit_id="website_hr_recruitment.apply" active="True" name="State and Skills">
+
+    <xpath expr="//form[@id='hr_recruitment_form']/div[hasclass('s_website_form_rows')]/div[4]" position="after">
+        <t t-if="job.name == 'Recepcionista Nível I'">
+            <div class="col-12 mb-0 py-2 s_website_form_field s_website_form_custom" data-type="binary" data-name="image">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class="col-4 col-sm-auto s_website_form_label" style="width: 200px" for="recruitment11">
+                        <span class="s_website_form_label_content">Foto de Rosto e Corpo</span>
+                    </label>
+                    <div class="col-sm">
+                        <input id="recruitment11" type="file" class="form-control s_website_form_input o_resume_input" name="Image" multiple="" required=""/>
+                        <span class="text-muted small">Anexe as imagens necessárias</span>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </xpath>
+
+    <xpath expr="//form[@id='hr_recruitment_form']/div[hasclass('s_website_form_rows')]/div[3]" position="after">
+        <t t-if="job.name == 'Recepcionista Nível I'">
+            <div class="form-group s_website_form_field col-12 mb-0 py-3" data-type="one2many" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class=" col-sm-auto s_website_form_label " style="width: 200px; padding-top: 20px; padding-bottom: 20px" for="system">
+                        <span class="s_website_form_label_content">Experiência de Mercado</span>
+                    </label>
+                    <div class="col-sm">
+                        <div class="row s_col_no_resize s_col_no_bgcolor s_website_form_multiple" data-name="system_skill" data-display="horizontal">
+                            <div class="checkbox col-12 col-lg-4 col-md-6">
+                                <div class="form-check">
+                                <input type="checkbox" class="s_website_form_input form-check-input" id="sys_1" name="system_skill" value="3"/>
+                                <label class="form-check-label s_website_form_check_label" for="sys_1">
+                                    Smarts eXtend
+                                </label>
+                                </div>
+                            </div>
+                            <div class="checkbox col-12 col-lg-4 col-md-6">
+                                <div class="form-check">
+                                <input type="checkbox" class="s_website_form_input form-check-input" id="sys_2" name="system_skill" value="4"/>
+                                <label class="form-check-label s_website_form_check_label" for="sys_2">
+                                    Hypnobox
+                                </label>
+                                </div>
+                            </div>
+                            <div class="checkbox col-12 col-lg-4 col-md-6">
+                                <div class="form-check">
+                                <input type="checkbox" class="s_website_form_input form-check-input" id="sys_3" name="system_skill" value="5"/>
+                                <label class="form-check-label s_website_form_check_label" for="sys_3">
+                                    Sigavi
+                                </label>
+                                </div>
+                            </div>
+                            <div class="checkbox col-12 col-lg-4 col-md-6">
+                                <div class="form-check">
+                                <input type="checkbox" class="s_website_form_input form-check-input" id="sys_4" name="system_skill" value="6"/>
+                                <label class="form-check-label s_website_form_check_label" for="sys_4">
+                                    Facilita
+                                </label>
+                                </div>
+                            </div>
+                            <div class="checkbox col-12 col-lg-4 col-md-6">
+                                <div class="form-check">
+                                <input type="checkbox" class="s_website_form_input form-check-input" id="sys_5" name="system_skill" value="7"/>
+                                <label class="form-check-label s_website_form_check_label" for="sys_5">
+                                    Construtor de Vendas
+                                </label>
+                                </div>
+                            </div>
+                            <div class="checkbox col-12 col-lg-4 col-md-6">
+                                <div class="form-check">
+                                <input type="checkbox" class="s_website_form_input form-check-input" id="sys_6" name="system_skill" value="8"/>
+                                <label class="form-check-label s_website_form_check_label" for="sys_6">
+                                    Anapro
+                                </label>
+                                </div>
+                            </div>
+                            <div class="checkbox col-12 col-lg-4 col-md-6">
+                                <div class="form-check">
+                                <input type="checkbox" class="s_website_form_input form-check-input" id="sys_7" name="system_skill" value="9"/>
+                                <label class="form-check-label s_website_form_check_label" for="sys_7">
+                                    Roleta
+                                </label>
+                                </div>
+                            </div>
+                            <div class="checkbox col-12 col-lg-4 col-md-6">
+                                <div class="form-check">
+                                    <input type="checkbox" class="s_website_form_input form-check-input" id="sys_8" name="system_skill" value="10"/>
+                                    <label class="form-check-label s_website_form_check_label" for="sys_8">
+                                        Regras de Mercado
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </t>
+    </xpath>
+
+    <xpath expr="//form[@id='hr_recruitment_form']/div[hasclass('s_website_form_rows')]/div[3]" position="after">
+        <t t-if="job.name == 'Recepcionista Nível I'">
+            <div class="form-group s_website_form_field col-12 mb-0 py-3   " data-type="one2many" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                <label class=" col-sm-auto s_website_form_label " style="width: 200px" for="skill">
+                    <span class="s_website_form_label_content">Idiomas</span>
+                </label>
+                <div class="col-sm">
+                    <div class="row s_col_no_resize s_col_no_bgcolor s_website_form_multiple" data-name="skill_ids" data-display="horizontal">
+                    <div class="checkbox col-12 col-lg-4 col-md-6">
+                        <div class="form-check">
+                        <input type="checkbox" class="s_website_form_input form-check-input" id="pt-br" name="skill_ids" value="2"/>
+                        <label class="form-check-label s_website_form_check_label" for="pt-br">
+                            Espanhol
+                        </label>
+                        </div>
+                    </div>
+                    <div class="checkbox col-12 col-lg-4 col-md-6">
+                        <div class="form-check">
+                        <input type="checkbox" class="s_website_form_input form-check-input" id="en-us" name="skill_ids" value="1"/>
+                        <label class="form-check-label s_website_form_check_label" for="en-us">
+                            Inglês
+                        </label>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </t>
+    </xpath>
+    
+    <xpath expr="//form[@id='hr_recruitment_form']/div[hasclass('s_website_form_rows')]/div[3]" position="after">
+        <t t-if="job.name == 'Recepcionista Nível I'">
+            <div class="col-12 mb-0 py-2 s_website_form_field s_website_form_required s_website_form_model_required"
+                data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class="col-4 col-sm-auto s_website_form_label" style="width: 200px" for="manequim">
+                        <span class="s_website_form_label_content">Manequim</span>
+                        <span class="s_website_form_mark"> *</span>
+                    </label>
+                    <select id="manequim" name="Manequim:" t-attf-class="form-select col-sm form-control s_website_form_input" required="">
+                        <option value="">Select</option>
+                        <option value="36">36</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                    </select>
+                </div>
+            </div>
+        </t>
+    </xpath>
+
+    <xpath expr="//form[@id='hr_recruitment_form']/div[hasclass('s_website_form_rows')]/div[3]" position="after">
+        <t t-if="job.name == 'Recepcionista Nível I'">
+            <div class="col-12 mb-0 py-2 s_website_form_field s_website_form_required s_website_form_model_required"
+                data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class="col-4 col-sm-auto s_website_form_label" style="width: 200px" for="period">
+                        <span class="s_website_form_label_content">Tempo de Experiência</span>
+                        <span class="s_website_form_mark"> *</span>
+                    </label>
+                    <select id="period" name="Tempo de Experiência:" t-attf-class="form-select col-sm form-control s_website_form_input" required="">
+                        <option value="">Select</option>
+                        <option value="Sem Experiência">Sem Experiência</option>
+                        <option value="Até 1 ano">Até 1 ano</option>
+                        <option value="Até 2 anos">Até 2 anos</option>
+                        <option value="Até 3 anos">Até 3 anos</option>
+                        <option value="4 anos ou mais">4 anos ou mais</option>
+                    </select>
+                </div>
+            </div>
+        </t>
+    </xpath>
+    
+    <xpath expr="//form[@id='hr_recruitment_form']/div[hasclass('s_website_form_rows')]/div[3]" position="after">
+        <t t-if="job.name == 'Recepcionista Nível I'">
+            <div class="col-12 mb-0 py-2 s_website_form_field s_website_form_required s_website_form_model_required"
+                data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class="col-4 col-sm-auto s_website_form_label" style="width: 200px" for="location">
+                        <span class="s_website_form_label_content">Localidade</span>
+                        <span class="s_website_form_mark"> *</span>
+                    </label>
+                    <select id="location_name" name="Localidade" t-attf-class="form-select col-sm form-control s_website_form_input" required="">
+                        <option value="">Select</option>
+                        <option value="ABCDM">ABCDM</option>
+                        <option value="Baixada Santista">Baixada Santista</option>
+                        <option value="Campinas">Campinas</option>
+                        <option value="Centro de SP">Centro de SP</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Zona Leste">Zona Leste</option>
+                        <option value="Zona Norte">Zona Norte</option>
+                        <option value="Zona Oeste">Zona Oeste</option>
+                        <option value="Zona Sul">Zona Sul</option>
+                    </select>
+                </div>
+            </div>
+        </t>
+    </xpath>
+
+
+    <xpath expr="//form[@id='hr_recruitment_form']/div[hasclass('s_website_form_rows')]/div[3]" position="after">
+        <t t-if="job.name == 'Recepcionista Nível I'">
+            <div class="col-12 mb-0 py-2 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class="col-4 col-sm-auto s_website_form_label" style="width: 200px" for="cep">
+                        <span class="s_website_form_label_content">CEP</span>
+                        <span class="s_website_form_mark"> *</span>
+                    </label>
+                    <div class="col-sm">
+                        <input id="cep" type="text" class="form-control s_website_form_input" name="CEP" required="" data-fill-with="cep"/>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </xpath>
+
+    <xpath expr="//form[@id='hr_recruitment_form']/div[hasclass('s_website_form_rows')]/div[3]" position="after">
+        <t t-if="job.name == 'Recepcionista Nível I'">
+            <div class="col-12 mb-0 py-2 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class="col-4 col-sm-auto s_website_form_label" style="width: 200px" for="address">
+                        <span class="s_website_form_label_content">Endereço</span>
+                        <span class="s_website_form_mark"> *</span>
+                    </label>
+                    <div class="col-sm">
+                        <input id="address" type="address" class="form-control s_website_form_input" name="Endereço" required="" data-fill-with="address"/>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </xpath>
+    
+</template>
+
+</odoo>
